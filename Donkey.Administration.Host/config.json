@@ -1,0 +1,5 @@
+{
+  "Host": "http://localhost",
+  "Port": 1258,
+  "ConnectionString": "Host=127.0.0.1;Database=Donkey.Administration-upd;Username=postgres;Password=gramota5545;"
+}

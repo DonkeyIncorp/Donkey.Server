@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <StartupObject>Donkey.Administration.Host.Program</StartupObject>
+    <UserSecretsId>b24eafd0-c88b-48d8-9d20-f01ded35e29b</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.WindowsServices" Version="3.1.18" />
+    <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="NLog" Version="4.7.11" />
+    <PackageReference Include="NLog.Schema" Version="4.7.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Donkey.Administration.BusinessLogic\Donkey.Administration.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Donkey.Administration.Data\Donkey.Administration.Data.csproj" />
+    <ProjectReference Include="..\Donkey.Administration.WebApi\Donkey.Administration.WebApi.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" config_1json__JsonSchema="https://json.schemastore.org/cosmos-config.json" properties_4launchsettings_1json__JsonSchema="https://json.schemastore.org/minecraft-dimension-type.json" /></VisualStudio></ProjectExtensions>
+
+</Project>
